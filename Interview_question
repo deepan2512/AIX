@@ -1,0 +1,59 @@
+
+Here are some SME (Subject Matter Expert) Level 4 interview questions about AIX, AIX VIO (Virtual I/O Server), AIX HMC (Hardware Management Console), AIX NIM (Network Installation Manager), and AIX PowerHA (High Availability). These questions cover advanced topics, designed to assess expertise in managing complex AIX environments and related technologies.
+
+AIX (Advanced Interactive eXecutive)
+
+Explain how AIX uses logical volume manager (LVM) for storage management. How would you optimize LVM performance for high I/O workloads?
+Discuss kernel tuning in AIX for high-performance computing applications. Which parameters do you prioritize, and how do you measure tuning effectiveness?
+Describe the use and configuration of WPARs (Workload Partitions) in AIX. How do WPARs differ from LPARs in terms of isolation and resource sharing?
+Explain the process of diagnosing and resolving a memory leak on an AIX system. What tools and steps would you take to investigate and address the issue?
+What steps would you take to recover from a corrupted rootvg? Describe how you would use mksysb and other backup tools in AIX for this process.
+Discuss the role of RBAC (Role-Based Access Control) in AIX. How would you set up and manage user permissions in a multi-user environment?
+How do you use JFS2 snapshots, and what are their limitations compared to third-party snapshot tools?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AIX VIO (Virtual I/O Server)
+
+Explain the role of the VIO server in AIX and PowerVM environments. What are the main benefits of using VIO, and how does it enhance virtualization?
+How do you troubleshoot performance issues in VIO servers, specifically around shared Ethernet adapters and virtual SCSI? Describe the tools and commands used.
+Explain the differences between Shared Ethernet Adapter (SEA) and Link Aggregation (LACP) in AIX VIO. When would you choose one over the other?
+How do you configure and manage NPIV (N_Port ID Virtualization) in a VIO server environment? Discuss the benefits and any potential pitfalls.
+Describe the process of performing a live partition mobility (LPM) operation in an AIX VIO environment. What are the prerequisites, and what common challenges might arise?
+How would you back up and restore a VIO server configuration? What are the critical files or commands used for VIO backup and restore?
+What’s the impact of dual VIO servers on HA (High Availability), and how do you ensure redundancy?
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AIX HMC (Hardware Management Console)
+
+Explain how the HMC manages and interacts with Power Systems LPARs. What are the primary roles of HMC in a virtualized AIX environment?
+How do you troubleshoot an HMC that is unable to connect to managed servers? What tools or logs would you use?
+Describe the steps for creating a full HMC backup and restoring it to a new HMC. What challenges might you encounter, and how would you address them?
+Discuss the process of managing firmware updates on AIX systems using HMC. How do you handle firmware dependencies with other components?
+How would you configure HMC user roles and permissions for secure access management?
+Explain the command-line utility mkauthkeys on HMC and its purpose. How does it facilitate secure, passwordless SSH access?
+What steps would you take to troubleshoot and resolve resource issues in an LPAR using HMC?
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AIX NIM (Network Installation Manager)
+
+Describe the process of configuring a NIM master server and client. How do you set up and troubleshoot a basic NIM environment?
+How would you handle a situation where a NIM client fails to boot from the network? What diagnostic steps and tools would you use?
+Explain the use of nimadm for migrating AIX versions. What are the prerequisites and best practices for using nimadm?
+How do you configure alternate disk migration using NIM? What are the advantages of this approach in a production environment?
+Discuss how to manage NIM resources efficiently in a large-scale environment. What are some ways to optimize resource usage and ensure high availability?
+What steps would you take to troubleshoot communication issues between a NIM master and its clients?
+Explain the role of nimsh (NIM Shell) and rsh in NIM client-server communication. How would you switch a NIM environment from rsh to nimsh?
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AIX PowerHA (High Availability)
+
+Describe the basic architecture and components of AIX PowerHA. How does PowerHA ensure high availability for mission-critical applications?
+Explain the steps to configure a PowerHA cluster from scratch. What key considerations do you keep in mind when setting up the cluster?
+How do you handle network redundancy in PowerHA? Discuss the use of heartbeat and cluster communication networks.
+Describe the process of performing a PowerHA upgrade in a production environment. What precautions and rollback plans would you put in place?
+How would you troubleshoot a resource group that fails to start in PowerHA? Describe the steps and tools you would use to diagnose the issue.
+Explain the purpose of Persistent Node IP (PNIP) and Service IP in PowerHA. How do they contribute to high availability and failover?
+How would you configure and test automated failover in a PowerHA cluster? What tests and validation steps would you perform to ensure reliability?
+Discuss how split-brain situations are avoided in PowerHA, and how would you recover from one if it occurs?
+Explain the role of enhanced concurrent volume groups in PowerHA. When would you use these, and what are the advantages?
+Describe how to monitor and analyze PowerHA logs for troubleshooting. Which specific logs or commands are most helpful?
