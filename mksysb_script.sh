@@ -2,12 +2,12 @@
 
 # Variables
 MOUNT_POINT="/mnt"
-NFS_SERVER="dc1nim:/export/mksysb /mnt"
+NFS_SERVER="dc1nim:/export/mksysb"
 BACKUP_FILE="dc2nim1_mksysb"
 BACKUP_PATH="$MOUNT_POINT/$BACKUP_FILE"
 PREV_BACKUP="$BACKUP_PATH.prev"
 LOG_FILE="/tmp/mksysb.log"
-EMAIL="deepan.s@kyndryl.com"
+EMAIL="deepan.s@gmail.com"
 
 # Step 1: Check if /mnt is mounted, if not, mount it
 if ! mount | grep -q "$MOUNT_POINT"; then
